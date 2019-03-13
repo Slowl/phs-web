@@ -1,29 +1,108 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import Search from './Search'
+import Buttons from './Buttons'
+import Title from './Title'
+
+const Container = styled.div`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+`
+
+const SourceContainer = styled.div`
+  color: white;
+  text-align:center;
+  padding-top: 2em;
+
+  .quality {
+    padding: 1em;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+`
+const ErrorContainer = styled.div`
+  color: white;
+  background-color: #d54b4b;
+  padding: 2em;
+  width: 40%;
+  margin: 1em auto;
+  text-align:center;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+  @media screen and (max-width: 45em) {
+      font-size: 16px;
+      width: 80%;
+  }
+`
 
 const MainApp = () => {
   const [data, setData] = useState('');
+  const [inputVal, changeVal] = useState('');
+  const [loading, updateStatus] = useState(false);
+  const [error, updateError] = useState(false);
+  // https://fr.pornhub.com/view_video.php?viewkey=ph5c05d137bb057
 
-  useEffect(() => {
-    fetch('https://cors-anywhere.herokuapp.com/https://fr.pornhub.com/view_video.php?viewkey=ph5c662b0e5bcd6')
-    .then((response) => response.text())
-    .then((sourceCode) => {
-      setData(sourceCode)
+  const SearchFunc = () => {
+    const sourceRequest = async () => {
+        updateError(false)
+        updateStatus(true)
+        const response = await fetch(`https://cors-anywhere.herokuapp.com/${inputVal}`)
+        const source = await response.text()
+        const uglySource = source.split(`"mediaDefinitions":`)[1]
+        const lessUglySource = uglySource.split("}]")
+        const formatedSource = lessUglySource[0] + "}]"
+        const preciousData = JSON.parse(formatedSource)
+        updateStatus(false)
+        return preciousData
+    }
+
+    sourceRequest()
+    .then(sourceCode => setData(sourceCode))
+    .catch(error => {
+      updateStatus(false)
+      updateError(true)
+      console.log(error)
     })
-  }, []);
-
-  const uglyShit = data.split(`"mediaDefinitions":`)[1]
-
-  if (uglyShit) {
-    const anotherShit = uglyShit.split("}]")
-    const yes = anotherShit[0] + "}]"
-    console.log(JSON.parse(yes))
   }
 
-  return (
-    <div>
+  const handleChange = (e) => {
+    const formatedvalue = e.target.value.trim()
+    changeVal(formatedvalue)
+  }
 
-    </div>
+  const handleKeyPress = (e) => {
+  if (e.key === "Enter") {
+    SearchFunc()
+  }
+}
+  console.log(typeof(data))
+  return (
+    <Container>
+      <Title />
+      <Search onClick={SearchFunc} onChange={handleChange} onKeyPress={handleKeyPress} status={loading} />
+      <SourceContainer>
+
+        {error ? (<ErrorContainer> An error occured, probably caused by the link you provided </ErrorContainer>) : (<span></span>)}
+
+        {data && (
+          <div className="quality">
+            Select the quality :
+          </div>
+        )}
+
+        {!!data && (
+          data.map(
+            (datas, key) => (
+              datas.format === "mp4" && (
+                <Buttons key={key} url={datas.videoUrl} quality={datas.quality} />
+              )
+            )
+          )
+        )}
+      </SourceContainer>
+    </Container>
   )
 }
 
