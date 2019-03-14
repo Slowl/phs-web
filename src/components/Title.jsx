@@ -29,7 +29,7 @@ const TitleContainer = styled.div`
 const Title = () => {
 
   return (
-    <TitleContainer> WH<span>AT ?</span> </TitleContainer>
+    <TitleContainer> PH<span>S ?</span> </TitleContainer>
   )
 }
 

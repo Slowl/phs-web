@@ -87,7 +87,7 @@ const About = () => {
           <div>- Or click on it and after you know what to do.</div>
         </Paragraph>
         <Paragraph>
-          <span>Why the name "What ?" instead of PHS ? </span>
+          <span>Why the name "PHS ?"</span>
           Because I didn't want someone to ask me what I was working on by watching my screens, and seeing something like "Pornhub Source".
           <div>Even for you when you'll use it, nobody will ask questions.
           If they do, it's because they recognized Pornhub colors and therefore, they know that you know that they know.</div>
