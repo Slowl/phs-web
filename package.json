@@ -1,7 +1,7 @@
 {
   "name": "dlphub",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@reach/router": "^1.2.1",
     "react": "^16.8.4",
