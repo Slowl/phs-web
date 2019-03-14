@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Search from './Search'
-import Buttons from './Buttons'
-import Title from './Title'
+import Search from '../components/Search'
+import Buttons from '../components/Buttons'
+import Title from '../components/Title'
 
 const Container = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
   width: 100%;
+  min-height: 90vh;
+  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 `
 
@@ -79,30 +81,34 @@ const MainApp = () => {
 }
   console.log(typeof(data))
   return (
-    <Container>
-      <Title />
-      <Search onClick={SearchFunc} onChange={handleChange} onKeyPress={handleKeyPress} status={loading} />
-      <SourceContainer>
+    <div>
 
-        {error ? (<ErrorContainer> An error occured, probably caused by the link you provided </ErrorContainer>) : (<span></span>)}
+      <Container>
+        <Title />
+        <Search onClick={SearchFunc} onChange={handleChange} onKeyPress={handleKeyPress} status={loading} />
+        <SourceContainer>
 
-        {data && (
-          <div className="quality">
-            Select the quality :
-          </div>
-        )}
+          {error ? (<ErrorContainer> An error occured, probably caused by the link you provided </ErrorContainer>) : (<span></span>)}
 
-        {!!data && (
-          data.map(
-            (datas, key) => (
-              datas.format === "mp4" && (
-                <Buttons key={key} url={datas.videoUrl} quality={datas.quality} />
+          {data && (
+            <div className="quality">
+              Select the quality :
+            </div>
+          )}
+
+          {!!data && (
+            data.map(
+              (datas, key) => (
+                datas.format === "mp4" && (
+                  <Buttons key={key} url={datas.videoUrl} quality={datas.quality} />
+                )
               )
             )
-          )
-        )}
-      </SourceContainer>
-    </Container>
+          )}
+        </SourceContainer>
+      </Container>
+
+    </div>
   )
 }
 
