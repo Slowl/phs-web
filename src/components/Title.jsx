@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TitleContainer = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
   font-family: 'Rubik', sans-serif;
   display: block;
   color: white;

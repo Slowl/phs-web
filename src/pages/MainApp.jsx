@@ -5,7 +5,6 @@ import Buttons from '../components/Buttons'
 import Title from '../components/Title'
 
 const Container = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
   width: 100%;
   padding-top: 5em;
   overflow-x: hidden;
