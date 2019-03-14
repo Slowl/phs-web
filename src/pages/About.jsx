@@ -60,6 +60,10 @@ const Paragraph = styled.div`
     }
   }
 
+  b {
+    font-weight: 700;
+  }
+
   @media screen and (max-width: 45em) {
     font-size: 18px;
   }
@@ -69,12 +73,12 @@ const About = () => {
   return (
     <Container>
       <Title>
-        What's What ?
+        What's PHS ?
       </Title>
       <Desc>
         <Paragraph>
-          <span>What's What ?</span>
-          It's a tool that helps you download Pornhub (community) videos when you can't, by simply "long press" / "right click" on the video.
+
+          The acronym for <b>Pornhub Source</b>, it's a tool that helps you download Pornhub (community) videos when you can't, by simply "long press" / "right click" on the video.
         </Paragraph>
         <Paragraph>
           <span>How to use ?</span>
@@ -83,8 +87,8 @@ const About = () => {
           <div>- Or click on it and after you know what to do.</div>
         </Paragraph>
         <Paragraph>
-          <span>Why the name "What ?" </span>
-          Because I didn't want someone to ask me what I was working on by watching my screens, and seeing something like "Pornhub Downloader".
+          <span>Why the name "What ?" instead of PHS ? </span>
+          Because I didn't want someone to ask me what I was working on by watching my screens, and seeing something like "Pornhub Source".
           <div>Even for you when you'll use it, nobody will ask questions.
           If they do, it's because they recognized Pornhub colors and therefore, they know that you know that they know.</div>
         </Paragraph>
