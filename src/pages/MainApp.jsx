@@ -43,7 +43,6 @@ const MainApp = () => {
   const [inputVal, changeVal] = useState('');
   const [loading, updateStatus] = useState(false);
   const [error, updateError] = useState(false);
-  // https://fr.pornhub.com/view_video.php?viewkey=ph5c05d137bb057
 
   const SearchFunc = () => {
     const sourceRequest = async () => {
@@ -78,7 +77,7 @@ const MainApp = () => {
     SearchFunc()
   }
 }
-  
+
   return (
     <div>
 
