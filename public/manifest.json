@@ -4,10 +4,35 @@
   "description": "A downloader for Pornhub community videos",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
+      "src": "icons/phs-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/phs-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/phs-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/phs-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/phs-196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/phs-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
   ],
   "start_url": "./index.html",
   "display": "standalone",
