@@ -19,12 +19,23 @@ const Title = styled.div`
     height: 3px;
     background-color:#e78a00;
   }
+
+  @media screen and (max-width: 45em) {
+      font-size: 32px;
+      :after {
+        width: 100px;
+      }
+  }
 `
 const Desc = styled.div`
   max-height: 60vh;
   width: 40%;
   margin: auto;
   overflow-y: auto;
+
+  @media screen and (max-width: 45em) {
+    width: 90%;
+  }
 `
 
 const Paragraph = styled.div`
@@ -47,6 +58,10 @@ const Paragraph = styled.div`
       height: 1px;
       background-color:#e78a00;
     }
+  }
+
+  @media screen and (max-width: 45em) {
+    font-size: 18px;
   }
 `
 
