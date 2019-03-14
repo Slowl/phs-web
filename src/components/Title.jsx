@@ -11,7 +11,7 @@ const TitleContainer = styled.div`
   text-align: center;
   width: 90%;
   padding: .2em;
-  margin: 1em auto 0;
+  margin: auto;
 
   span {
     background-color: #ff9900;

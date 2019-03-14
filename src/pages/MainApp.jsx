@@ -7,7 +7,7 @@ import Title from '../components/Title'
 const Container = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
   width: 100%;
-  min-height: 90vh;
+  padding-top: 5em;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 `
@@ -26,9 +26,9 @@ const SourceContainer = styled.div`
 const ErrorContainer = styled.div`
   color: white;
   background-color: #d54b4b;
-  padding: 2em;
+  padding: 1em;
   width: 40%;
-  margin: 1em auto;
+  margin: .2em auto;
   text-align:center;
   letter-spacing: 1px;
   font-size: 18px;
