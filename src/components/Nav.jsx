@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Link } from "@reach/router";
 
 const NavContainer = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   display: flex;
@@ -31,7 +30,7 @@ const NavContainer = styled.div`
 const Nav = () => {
   return (
     <NavContainer>
-      <Link to="home"> HOME </Link>
+      <Link to="/"> HOME </Link>
       <Link to="about"> ABOUT </Link>
     </NavContainer>
   )

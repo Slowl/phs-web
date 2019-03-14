@@ -24,7 +24,7 @@ const FooterContainer = styled.div`
 const Footer = () => {
   return (
     <FooterContainer>
-      Made for fun by <a href="https://hedik.fr/" target="_blank"> HediK </a>
+      Made for fun by <a href="https://hedik.fr/" target="_blank" rel="noopener noreferrer"> HediK </a>
     </FooterContainer>
   )
 }
