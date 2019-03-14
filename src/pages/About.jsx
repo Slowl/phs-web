@@ -84,7 +84,13 @@ const About = () => {
           <span>How to use ?</span>
           - Go on your favorite Pornhub video, copy the link from the address bar, and paste it here.
           <div>- Then "long press / right click" on the quality you want and save the video.</div>
-          <div>- Or click on it and after you know what to do.</div>
+          <div>- Or click / press on it and after you know what to do.</div>
+        </Paragraph>
+        <Paragraph>
+          <span>Download the app</span>
+          You can install this tool on your phone so you won't need to go on the website everytime.
+          <div>- Simply click on the bottom banner asking you if you want to add it on your home screen.</div>
+          <div>- If you refused the first time, you can still add it by opening the option menu of your browser, and clicking on "Add to home screen".</div>
         </Paragraph>
         <Paragraph>
           <span>Why the name "PHS ?"</span>
