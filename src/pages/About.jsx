@@ -60,12 +60,33 @@ const Paragraph = styled.div`
     }
   }
 
+  a {
+    color: black;
+    background-color:#e78a00;
+    padding: .15em;
+    margin: .07em;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .4s;
+
+    :hover {
+      background-color: #bb7000;
+    }
+  }
+
   b {
     font-weight: 700;
   }
 
   @media screen and (max-width: 45em) {
     font-size: 18px;
+
+    a {
+      font-weight: 400;
+      font-size: 18px;
+    }
   }
 `
 
@@ -88,8 +109,8 @@ const About = () => {
         </Paragraph>
         <Paragraph>
           <span>Download the app</span>
-          You can install this tool on your phone so you won't need to go on the website everytime.
-          <div>- Simply click on the bottom banner asking you if you want to add it on your home screen.</div>
+          <div>- Android : <a href="https://hedik.fr/apk/PHS.apk" download> Download here </a></div>
+          <div>- Or, you can simply click on the bottom banner asking you if you want to add it on your home screen.</div>
           <div>- If you refused the first time, you can still add it by opening the option menu of your browser, and clicking on "Add to home screen".</div>
         </Paragraph>
         <Paragraph>
