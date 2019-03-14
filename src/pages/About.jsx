@@ -74,7 +74,7 @@ const About = () => {
       <Desc>
         <Paragraph>
           <span>What's What ?</span>
-          It's a tool that helps you download Pornhub videos when you can't, by simply "long press" / "right click" on the video.
+          It's a tool that helps you download Pornhub (community) videos when you can't, by simply "long press" / "right click" on the video.
         </Paragraph>
         <Paragraph>
           <span>How to use ?</span>

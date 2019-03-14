@@ -78,7 +78,7 @@ const MainApp = () => {
     SearchFunc()
   }
 }
-  console.log(typeof(data))
+  
   return (
     <div>
 

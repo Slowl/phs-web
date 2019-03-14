@@ -24,6 +24,7 @@ const InputBox = styled.input`
   border-radius: 10px 0 0 10px;
 
   :focus {
+    outline: 0;
     border-top-color: #ff9900;
     border-left-color: #ff9900;
     border-bottom-color: #ff9900;
