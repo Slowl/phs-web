@@ -78,7 +78,7 @@ const About = () => {
       <Desc>
         <Paragraph>
 
-          The acronym for <b>Pornhub Source</b>, it's a tool that helps you download Pornhub (community) videos when you can't, by simply "long press" / "right click" on the video.
+          The acronym for <b>Pornhub Source</b>, it's a tool that helps you download Pornhub (community) videos when you can't simply "long press" / "right click" on the video.
         </Paragraph>
         <Paragraph>
           <span>How to use ?</span>
