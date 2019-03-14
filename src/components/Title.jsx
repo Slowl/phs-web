@@ -9,7 +9,7 @@ const TitleContainer = styled.div`
   font-size: 92px;
   font-weight: 400;
   text-align: center;
-  width: 30%;
+  width: 90%;
   padding: .2em;
   margin: 1em auto 0;
 
