@@ -29,10 +29,9 @@ It's a website / PWA that helps you download Pornhub (community /certified <img 
   - Display it to the world
 
 # TODO :
-
-  - Website deployed [x]
-  - Progressive Web App (PWA) [x]
-  - React Native Application [ ]
+  - [x] Website deployed
+  - [x] Progressive Web App (PWA) 
+  - [ ] React Native Application 
 
 # Live Website :
 
