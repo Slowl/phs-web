@@ -14,7 +14,7 @@ It's a website / PWA that helps you download Pornhub (community /certified <img 
     
    We start to investigate the issue, until we conclude that we can't when this nasty $ appears under the video most of the time
    
-   <img src="https://hedik.fr/imgs/phs/nastyboy.png" width="15%">
+   <p align="center"><img src="https://hedik.fr/imgs/phs/nastyboy.png" width="15%"></p>
     
    - Me : "No worries brother, I got you. Give me 2 or 3 days"
 
