@@ -35,4 +35,4 @@ It's a website / PWA that helps you download Pornhub (community /certified <img 
 
 # Live Website :
 
-[PHS - Pornhub Source](https://phsource.netlify.com/).
+[PHS - Pornhub Source](https://phs-web.netlify.com/).
