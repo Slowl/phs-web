@@ -108,12 +108,6 @@ const About = () => {
           <div>- Or click / press on it and after you know what to do.</div>
         </Paragraph>
         <Paragraph>
-          <span>Download the app</span>
-          <div>- Android : <a href="https://hedik.fr/apk/PHS.apk" download> Download here </a></div>
-          <div>- Or, you can simply click on the bottom banner asking you if you want to add it on your home screen.</div>
-          <div>- If you refused the first time, you can still add it by opening the option menu of your browser, and clicking on "Add to home screen".</div>
-        </Paragraph>
-        <Paragraph>
           <span>Why the name "PHS ?"</span>
           Because I didn't want someone to ask me what I was working on by watching my screens, and seeing something like "Pornhub Source".
           <div>Even for you when you'll use it, nobody will ask questions.
