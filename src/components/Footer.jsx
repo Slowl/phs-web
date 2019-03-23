@@ -6,6 +6,7 @@ const FooterContainer = styled.div`
   font-weight: 200;
   text-align: center;
   color: white;
+  padding: 2em;
 
   a {
       color: black;
