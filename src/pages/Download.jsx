@@ -130,7 +130,7 @@ const Download = () => {
           - A clean web browser history
         </Paragraph>
       </Desc>
-      <DownloadButton href="#" download>Download for Android</DownloadButton>
+      <DownloadButton href="https://hedik.fr/apk/phs-app.apk" download>Download for Android</DownloadButton>
       <ImgContainer>
         <img src={AppImg} alt="homepage" />
         <img src={AppLinkImg} alt="linked" />
