@@ -86,7 +86,7 @@ const MainApp = () => {
         <Search onClick={SearchFunc} onChange={handleChange} onKeyPress={handleKeyPress} status={loading} />
         <SourceContainer>
 
-          {error ? (<ErrorContainer> An error occured, probably caused by the link you provided </ErrorContainer>) : (<span></span>)}
+          {error ? (<ErrorContainer> An error occured, please check your link and try again. </ErrorContainer>) : (<span></span>)}
 
           {data && (
             <div className="quality">
