@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Router } from "@reach/router"
 import Nav from './components/Nav'
 import MainApp from './pages/MainApp'
+import Download from './pages/Download'
 import About from './pages/About'
 import Footer from './components/Footer'
 
@@ -12,7 +13,7 @@ const Container = styled.div`
 `
 
 const CustomRouter = styled(Router)`
-  height: calc(100vh - 6em);
+  min-height: calc(100vh - 9em);
 `
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Nav />
         <CustomRouter>
           <MainApp path="/" />
+          <Download path="download" />
           <About path="about" />
         </CustomRouter>
         <Footer />

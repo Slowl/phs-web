@@ -15,6 +15,7 @@ const NavContainer = styled.div`
     padding: 1em;
     transition: .4s;
     font-size: 18px;
+    text-align: center;
 
     :hover {
       background-color:#e78a00;
@@ -31,6 +32,7 @@ const Nav = () => {
   return (
     <NavContainer>
       <Link to="/"> HOME </Link>
+      <Link to="download"> DOWNLOAD THE APP</Link>
       <Link to="about"> ABOUT </Link>
     </NavContainer>
   )
