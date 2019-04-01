@@ -31,7 +31,7 @@ It's a website / PWA that helps you download Pornhub (community /certified <img 
 # TODO :
   - [x] Website deployed
   - [x] Progressive Web App (PWA) 
-  - [ ] React Native Application 
+  - [x] React Native Application 
 
 # Live Website :
 
