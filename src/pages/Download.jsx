@@ -126,7 +126,7 @@ const Download = () => {
           - A clean web browser history
         </Paragraph>
       </Desc>
-      <DownloadButton href="https://hedik.fr/apk/phs-app.apk" download>Download for Android</DownloadButton>
+      <DownloadButton href="https://github.com/Slowl/phs-app/releases/download/v1.0/phs-app.apk" download>Download for Android</DownloadButton>
       <ImgContainer>
         <img src="https://i.ibb.co/b5LmJsD/app.png" alt="homepage" />
         <img src="https://i.ibb.co/gMzZgzV/app-link.png" alt="linked" />
