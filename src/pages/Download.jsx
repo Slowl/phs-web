@@ -1,9 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import AppImg from '../assets/img/app.png'
-import AppLinkImg from '../assets/img/app-link.png'
-import BrowserImg from '../assets/img/browser.png'
-import AboutImg from '../assets/img/about.png'
 
 const Container = styled.div`
   padding-top: 2.5em;
@@ -132,10 +128,10 @@ const Download = () => {
       </Desc>
       <DownloadButton href="https://hedik.fr/apk/phs-app.apk" download>Download for Android</DownloadButton>
       <ImgContainer>
-        <img src={AppImg} alt="homepage" />
-        <img src={AppLinkImg} alt="linked" />
-        <img src={BrowserImg} alt="browser" />
-        <img src={AboutImg} alt="about" />
+        <img src="https://i.ibb.co/b5LmJsD/app.png" alt="homepage" />
+        <img src="https://i.ibb.co/gMzZgzV/app-link.png" alt="linked" />
+        <img src="https://i.ibb.co/NVDPcvM/browser.png" alt="browser" />
+        <img src="https://i.ibb.co/1MFQWMp/about.png" alt="about" />
       </ImgContainer>
     </Container>
   )
