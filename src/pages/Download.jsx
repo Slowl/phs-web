@@ -98,6 +98,7 @@ const ImgContainer = styled.div`
     img {
       margin: 1em;
       width: 70%;
+      height:auto;
       border: 3px solid #202020;
       border-radius: 15px;
     }
