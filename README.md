@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88740e55-fa65-4b88-ac8b-6f91b8ba15d0/deploy-status)](https://app.netlify.com/sites/phs-web/deploys)
 
+Pornhub modified the way they display videos on their pages, therefore the app doesn't work for the moment
+
 # Pornhub Source - PHS
 
 It's a website / PWA that helps you download Pornhub (community /certified <img src="https://i.ibb.co/sWsr2J1/certified.png" width="3%">) videos when you can't simply "long press" / "right click" on the video.
