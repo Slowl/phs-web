@@ -9,6 +9,7 @@ const Container = styled.div`
   padding-top: 5em;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 `
 
 const SourceContainer = styled.div`
@@ -43,6 +44,7 @@ const MainApp = () => {
   const [inputVal, changeVal] = useState('');
   const [loading, updateStatus] = useState(false);
   const [error, updateError] = useState(false);
+  const [phScript, setScript] = useState()
 
   const SearchFunc = () => {
     const sourceRequest = async () => {
@@ -50,12 +52,10 @@ const MainApp = () => {
         updateStatus(true)
         const response = await fetch(`https://cors-anywhere.herokuapp.com/${inputVal}`)
         const source = await response.text()
-        const uglySource = source.split(`"mediaDefinitions":`)[1]
-        const lessUglySource = uglySource.split("}]")
-        const formatedSource = lessUglySource[0] + "}]"
-        const preciousData = JSON.parse(formatedSource)
+        const script = source.split('<script type="text/javascript">')[4].split("</script>")[0]
+        const formatedScript = script.split('loadScriptUniqueId')[0]
+        setScript(formatedScript)
         updateStatus(false)
-        return preciousData
     }
 
     sourceRequest()
@@ -73,10 +73,14 @@ const MainApp = () => {
   }
 
   const handleKeyPress = (e) => {
-  if (e.key === "Enter") {
-    SearchFunc()
+    if (e.key === "Enter") {
+      SearchFunc()
+    }
   }
-}
+
+  const execPhScript = async() => {
+    return
+  }
 
   return (
     <div>
@@ -84,10 +88,9 @@ const MainApp = () => {
       <Container>
         <Title />
         <Search onClick={SearchFunc} onChange={handleChange} onKeyPress={handleKeyPress} status={loading} />
+        <div onClick={() => execPhScript()}> execute </div>
         <SourceContainer>
-
           {error ? (<ErrorContainer> An error occured, please check your link and try again. </ErrorContainer>) : (<span></span>)}
-
           {data && (
             <div className="quality">
               Select the quality :
